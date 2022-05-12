@@ -1,0 +1,23 @@
+Build:
+=====
+Using Eclipse, import project. Run Tests. Export to JAR files with Main class in maniphest.
+
+Usage:
+======
+Can be run from the command line 
+    java -jar VendingMachine.jar
+
+Assumptions:
+============
+We assume we want to provide the change in a minimum coins possible. 
+The machine coins are picked up if there is an excess or refilled everyday with the coins that are most missing to be able to provide change.
+Similarly the products are refilled or refreshed everyday.
+We're making sure the inserted coins are acceptable by asking the number of coins of each type.
+We keep the change in the machine, but update the amount of each coins after each transaction. We don't want to be short of change in order to fulfill a maximum of transactions. 
+
+Limitations:
+============
+This is a simulation of a simple machine, one order at a time, not a cart and a balance actualised after each order.
+The catalogue, inventory and change float is hard coded. They could be loaded with configuration files.
+We're not using any logging. Our team goal is to track change within vending machine.
+
